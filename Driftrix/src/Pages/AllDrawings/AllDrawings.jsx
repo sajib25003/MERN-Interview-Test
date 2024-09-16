@@ -11,7 +11,7 @@ const AllDrawings = () => {
   useEffect(() => {
     const fetchDrawings = async () => {
       try {
-        const response = await fetch("http://localhost:4000/drawings");
+        const response = await fetch("https://draftrix-server.vercel.app/drawings");
         const data = await response.json();
         setDrawings(data);
       } catch (error) {
@@ -25,7 +25,7 @@ const AllDrawings = () => {
   const openModal = async (drawingId) => {
     try {
       const response = await fetch(
-        `http://localhost:4000/drawings/${drawingId}`
+        `https://draftrix-server.vercel.app/drawings/${drawingId}`
       );
       const data = await response.json();
       setSelectedDrawing(data);
@@ -47,7 +47,7 @@ const AllDrawings = () => {
     if (!confirmDelete) return;
 
     try {
-      const response = await fetch(`http://localhost:4000/drawings/${id}`, {
+      const response = await fetch(`https://draftrix-server.vercel.app/drawings/${id}`, {
         method: "DELETE",
       });
 
@@ -79,7 +79,7 @@ const AllDrawings = () => {
         <title>Draftrix - All Drawings</title>
       </Helmet>
       <div className="pt-4 pb-6">
-        <h2 className="text-lg md:text-xl lg:text-3xl font-bold text-center">
+        <h2 className="text-black text-lg md:text-xl lg:text-3xl font-bold text-center">
           All Drawings
         </h2>
       </div>

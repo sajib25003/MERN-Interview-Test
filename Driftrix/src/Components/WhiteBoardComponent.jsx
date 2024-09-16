@@ -192,7 +192,7 @@ const WhiteBoardComponent = ({ drawing }) => {
     if (drawing && drawing._id) {
       try {
         const response = await fetch(
-          `http://localhost:4000/drawings/${drawing._id}`,
+          `https://draftrix-server.vercel.app/drawings/${drawing._id}`,
           {
             method: "PATCH",
             headers: {
@@ -215,7 +215,7 @@ const WhiteBoardComponent = ({ drawing }) => {
     } else {
       // save new drawing in database
       try {
-        const response = await fetch("http://localhost:4000/drawings", {
+        const response = await fetch("https://draftrix-server.vercel.app/drawings", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

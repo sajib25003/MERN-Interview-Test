@@ -1,5 +1,9 @@
 # Draftrix - Draw Here!
 
+## Live Demo
+
+https://driftrix.surge.sh/
+
 ## Site Description
 
 **Draftrix** is an innovative online platform that allows users to unleash their creativity through drawing. Whether you are an artist or just love to doodle, Draftrix provides a simple and fun interface for everyone to enjoy. Save your creations, edit them anytime, and showcase your art in the gallery.
@@ -22,7 +26,7 @@
 - **React-Tooltip**: For enhancing UI with tooltips.
 - **React-Helmet**: For managing document head.
 
-## How to Run 
+## How to Run
 
 1. Clone the repository:
    ```bash
@@ -40,11 +44,6 @@
    ```bash
    npm run dev
    ```
-
-## Live Demo
-
-[Live Link Here](#) <!-- Replace with your actual live link -->
-
 
 ## License
 

@@ -2,6 +2,12 @@
 
 This is the backend server for the **Draftrix - Draw Here!** application. It provides RESTful API endpoints to handle the storage, retrieval, updating, and deletion of drawings. The backend is built with Node.js and Express and uses MongoDB for data storage.
 
+## Live API
+
+**Main:** https://driftrix-server.vercel.app/
+**All Drawings:** https://driftrix-server.vercel.app/drawings
+**Main:** https://driftrix-server.vercel.app/drawings/:id
+
 ## Features
 
 - **RESTful API**: Provides endpoints to manage drawings (create, read, update, delete).
@@ -17,36 +23,6 @@ This is the backend server for the **Draftrix - Draw Here!** application. It pro
 - **Mongoose**: ODM library for MongoDB and Node.js.
 - **dotenv**: For managing environment variables.
 
-## How to Run
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/draftrix-backend.git
-    ```
-2. Navigate to the backend directory:
-    ```bash
-    cd draftrix-backend
-    ```
-3. Install dependencies:
-    ```bash
-    npm install
-    ```
-4. Create a `.env` file in the root directory and add your environment variables:
-    ```
-    PORT=4000
-    DB_USER=your_db_username
-    DB_PASS=your_db_password
-    MONGO_URI=your_mongodb_uri
-    ```
-5. Start the server:
-    ```bash
-    node index.js 
-    ```
-    or, 
-    ```bash
-    nodemon index.js 
-    ```
-
 ## API Endpoints
 
 - **GET** `/drawings`: Fetch all drawings.
@@ -55,11 +31,9 @@ This is the backend server for the **Draftrix - Draw Here!** application. It pro
 - **PATCH** `/drawings/:id`: Update an existing drawing.
 - **DELETE** `/drawings/:id`: Delete a drawing by ID.
 
-
-
 ## Live API
 
-Backend API is hosted [here](#) <!-- Replace with your actual backend URL -->
+https://driftrix-server.vercel.app/
 
 ## License
 

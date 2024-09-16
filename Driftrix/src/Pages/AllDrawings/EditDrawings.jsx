@@ -13,7 +13,7 @@ const EditDrawings = () => {
   // Handle the update save
   const handleUpdate = async (updatedDrawing) => {
     try {
-      const response = await fetch(`http://localhost:4000/drawings/${id}`, {
+      const response = await fetch(`https://draftrix-server.vercel.app/drawings/${id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -36,7 +36,7 @@ const EditDrawings = () => {
         <Helmet>
         <title>Draftrix - Edit Drawings</title>
       </Helmet>
-      <h2 className="text-lg md:text-xl lg:text-3xl font-bold text-center mb-4">Edit Drawing</h2>
+      <h2 className="text-black text-lg md:text-xl lg:text-3xl font-bold text-center mb-4">Edit Drawing</h2>
       
       {/*  WhiteBoardComponent for editing */}
       {drawingData && (
