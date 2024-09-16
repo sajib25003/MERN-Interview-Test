@@ -329,9 +329,9 @@ const WhiteBoardComponent = ({ drawing }) => {
   ];
 
   return (
-    <div className="bg-gray-200 px-32 pt-6 pb-10 min-h-screen">
+    <div className="bg-gray-200 px-2 md:px-10 lg:px-32 pt-6 pb-10 min-h-screen">
       {/* Tools Panel */}
-      <div className="flex justify-center items-center mb-4 space-x-2">
+      <div className="flex justify-center items-center px-4  mb-4 space-x-2 overflow-x-auto">
         {/* Tool buttons */}
         {tools.map((toolItem) => (
           <button

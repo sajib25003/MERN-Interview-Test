@@ -74,7 +74,7 @@ const AllDrawings = () => {
   };
 
   return (
-    <div className="p-6 mx-32">
+    <div className="p-6 mx-2 md:mx-10 lg:mx-32">
       <Helmet>
         <title>Draftrix - All Drawings</title>
       </Helmet>
@@ -113,29 +113,29 @@ const AllDrawings = () => {
       {isModalOpen &&
         selectedDrawing && ( 
           <dialog open className="modal bg-gray-300 bg-opacity-80">
-            <div className="modal-box w-4/5 max-w-5xl h-4/5 bg-green-50">
+            <div className="modal-box w-4/5 max-w-5xl h-1/3 md:h-2/5 lg:h-4/5 bg-green-50">
               <button
                 className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
                 onClick={closeModal}
               >
                 ✕
               </button>
-              <div className="bg-white text-black p-6 rounded shadow-lg h-full">
+              <div className="bg-white text-black p-2 pb-8 md:p-6 rounded shadow-lg h-full">
                 <img
                   src={selectedDrawing.image}
                   alt={selectedDrawing.drawingName}
                   className="w-full border rounded-lg shadow-xl h-[90%] object-cover mb-4"
                 />
-                <div className="flex justify-between items-center">
-                  <h2 className="text-lg font-bold mb-2">
+                <div className="flex justify-between items-center ">
+                  <h2 className=" text-sm md:text-lg font-bold md:mb-2">
                     {selectedDrawing.drawingName}
                   </h2>
-                  <p className="text-gray-500">
+                  <p className="text-gray-500 hidden md:flex">
                     By {selectedDrawing.authorName}
                   </p>
                   <button
                     onClick={handleEdit}
-                    className=" bg-blue-500 text-white px-4 py-2 rounded"
+                    className=" bg-blue-500 text-white px-4 sm:py-1 md:py-2 rounded"
                   >
                     Edit
                   </button>
