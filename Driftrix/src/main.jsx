@@ -7,12 +7,14 @@ import Home from "./Pages/Home/Home";
 import AllDrawings from "./Pages/AllDrawings/AllDrawings";
 import EditDrawings from "./Pages/AllDrawings/EditDrawings";
 import { HelmetProvider } from "react-helmet-async";
+import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 
 // Create the router
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
